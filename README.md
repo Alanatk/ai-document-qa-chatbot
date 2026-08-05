@@ -1,11 +1,13 @@
 # 📚 AI Document Intelligence Chatbot
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ai-documentchatbot.streamlit.app/)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![LangChain](https://img.shields.io/badge/LangChain-0.2+-green.svg)](https://www.langchain.com/)
 [![Google Gemini](https://img.shields.io/badge/LLM-Gemini_2.5_Flash-orange.svg)](https://ai.google.dev/)
 [![Vector Store](https://img.shields.io/badge/VectorStore-FAISS-blueviolet.svg)](https://github.com/facebookresearch/faiss)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+> 🚀 **Live Application**: [https://ai-documentchatbot.streamlit.app/](https://ai-documentchatbot.streamlit.app/)
 
 A production-grade **Retrieval-Augmented Generation (RAG)** Document Intelligence Chatbot built with **Streamlit**, **LangChain**, **Google Gemini 2.5 Flash**, **HuggingFace Embeddings**, and **FAISS**.
 
