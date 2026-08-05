@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Document Q&A Chatbot</title>
+    <meta name="description" content="An advanced AI-powered chatbot for document analysis and Q&A. Upload your documents and instantly extract insights.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <span>DocMind AI</span>
+                </div>
+            </div>
+            
+            <div class="upload-section">
+                <h3>Document Upload Center</h3>
+                <p>Upload files, then click process. The AI will learn them!</p>
+                
+                <div class="drop-zone" id="drop-zone">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <p class="drop-text">Drag and drop files here</p>
+                    <p class="drop-subtext">Limit 200MB per file • PDF, TXT, DOCX</p>
+                    <button class="browse-btn" id="browse-btn">Browse files</button>
+                    <input type="file" id="file-input" multiple accept=".pdf,.txt,.docx" hidden>
+                </div>
+
+                <div class="file-list" id="file-list">
+                    <!-- Files will be listed here dynamically -->
+                </div>
+
+                <button class="process-btn" id="process-btn" disabled>
+                    <i class="fa-solid fa-microchip"></i>
+                    Process Documents
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-container">
+            <header class="chat-header">
+                <h1>📚 AI Document Q&A Chatbot</h1>
+                <div class="status-indicator">
+                    <span class="dot offline" id="status-dot"></span>
+                    <span id="status-text">Awaiting Documents</span>
+                </div>
+            </header>
+
+            <div class="chat-messages" id="chat-messages">
+                <!-- Welcome Message -->
+                <div class="message system-message">
+                    <div class="message-content">
+                        <i class="fa-solid fa-info-circle"></i>
+                        <p>👈 Please use the sidebar to upload & process documents first.</p>
+                    </div>
+                </div>
+                <!-- Chat messages will be appended here -->
+            </div>
+
+            <div class="chat-input-wrapper">
+                <form class="chat-form" id="chat-form">
+                    <input type="text" id="chat-input" placeholder="Ask a question regarding the uploaded documents..." disabled>
+                    <button type="submit" id="send-btn" disabled aria-label="Send message">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
