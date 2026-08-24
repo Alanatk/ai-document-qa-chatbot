@@ -1,5 +1,5 @@
 """
-Utility functions for file handling, multi-format document loading,
+Utility functions for file handling, multi-format document loading*,
 metadata preservation, text splitting, statistical calculations,
 and audio speech-to-text transcription.
 """
